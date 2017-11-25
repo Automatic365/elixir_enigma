@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8b30c02-b141-4bee-b6b5-a6146d3850de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/enigma/keygen.ex" afterPath="$PROJECT_DIR$/lib/enigma/keygen.ex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/keygen_test.exs" afterPath="$PROJECT_DIR$/test/keygen_test.exs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/enigma/offsets.ex" afterPath="$PROJECT_DIR$/lib/enigma/rotation.ex" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,21 +18,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="keygen.ex" pinned="false" current-in-tab="true">
+          <file leaf-file-name="keygen.ex" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/enigma/keygen.ex">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="offsets.ex" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/enigma/offsets.ex">
+          <file leaf-file-name="rotation.ex" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/enigma/rotation.ex">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
                   <folding />
                 </state>
               </provider>
@@ -45,9 +45,8 @@
           <file leaf-file-name="keygen_test.exs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/keygen_test.exs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-                  <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -79,9 +78,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/test_helper.exs" />
-        <option value="$PROJECT_DIR$/lib/enigma/offsets.ex" />
         <option value="$PROJECT_DIR$/lib/enigma/keygen.ex" />
+        <option value="$PROJECT_DIR$/lib/enigma/offsets.ex" />
         <option value="$PROJECT_DIR$/test/keygen_test.exs" />
+        <option value="$PROJECT_DIR$/lib/enigma/rotation.ex" />
       </list>
     </option>
   </component>
@@ -256,12 +256,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511379672971</updated>
-      <workItem from="1511379677502" duration="13344000" />
+      <workItem from="1511379677502" duration="14256000" />
     </task>
+    <task id="LOCAL-00001" summary="add generate offsets from key method a test">
+      <created>1511587823886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511587823886</updated>
+    </task>
+    <task id="LOCAL-00002" summary="small refactors">
+      <created>1511588511483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511588511483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13344000" />
+    <option name="totallyTimeSpent" value="14256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1276" height="777" extended-state="0" />
@@ -300,6 +315,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add generate offsets from key method a test" />
+    <MESSAGE value="small refactors" />
+    <option name="LAST_COMMIT_MESSAGE" value="small refactors" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -313,27 +333,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/enigma/offsets.ex">
+    <entry file="file://$PROJECT_DIR$/test/keygen_test.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/enigma/keygen.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/keygen_test.exs">
+    <entry file="file://$PROJECT_DIR$/lib/enigma/rotation.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>

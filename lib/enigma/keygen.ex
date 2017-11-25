@@ -8,7 +8,7 @@ defmodule Enigma.Keygen  do
           |> Integer.to_string
   end
 
-  def get_offsets_from_key(key, offsets) do
+  def get_rotations_from_key(key, offsets) do
     offsets = %{
       offsets |
       A: "#{String.slice(key, 0..1)}",
