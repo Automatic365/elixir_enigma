@@ -1,12 +1,21 @@
-defmodule Enigma.KeyGen  do
+require IEx;
+
+defmodule Enigma.Keygen  do
+  alias Enigma.Offset
 
   def generate_key do
-    Enum.random(10000..99999)
-    |> Integer.to_string
+    key = Enum.random(10000..99999)
+          |> Integer.to_string
   end
 
-  def parse_key(key) do
-
+  def get_offsets_from_key(key, offsets) do
+    offsets = %{
+      offsets |
+      A: "#{String.slice(key, 0..1)}",
+      B: "#{String.slice(key, 1..2)}",
+      C: "#{String.slice(key, 2..3)}",
+      D: "#{String.slice(key, 3..4)}"
+    }
   end
 
 end
