@@ -1,3 +1,3 @@
-defmodule Enigma.Rotation do
+defmodule Enigma.OffsetStruct do
   defstruct A: "", B: "", C: "", D: ""
 end
