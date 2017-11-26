@@ -1,3 +1,3 @@
 defmodule Enigma.OffsetStruct do
-  defstruct A: "", B: "", C: "", D: ""
+  defstruct A_offset: "", B_offset: "", C_offset: "", D_offset: ""
 end

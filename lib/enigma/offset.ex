@@ -14,16 +14,17 @@ defmodule Enigma.Offset do
       |> parse_offsets(%OffsetStruct{})
   end
 
-  def parse_offsets(offset_string, offsets) do
+  defp parse_offsets(offset_string, offsets) do
    [a,b,c,d] =
       String.split(offset_string, "")
       |> List.delete_at(-1)
-    offsets = %{
+
+   offsets = %{
       offsets |
-      A: "#{a}",
-      B: "#{b}",
-      C: "#{c}",
-      D: "#{d}"
+      A_offset: "#{a}",
+      B_offset: "#{b}",
+      C_offset: "#{c}",
+      D_offset: "#{d}"
     }
   end
 
