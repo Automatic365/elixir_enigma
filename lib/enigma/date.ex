@@ -1,7 +1,9 @@
 defmodule Enigma.Date do
 
-  def parse_date do
-    date = Timex.today
+  def parse_date(date \\ "") do
+    if date == "" do
+      date = Timex.today
+    end
     numeric_date = ""
     valid_values = [:day, :month, :year]
     values = Enum.map(valid_values, fn (x) -> Map.get(date, x) end)
